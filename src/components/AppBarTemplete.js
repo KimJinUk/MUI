@@ -57,11 +57,13 @@ class AppBarTemplete extends Component {
   	render() {
   		return (
   			<MuiThemeProvider>
+          <div>1. AppBarTemplete
 					<AppBar
-						title="To do List11"
+						title="To do List"
 						iconElementRight={this.state.logged ? <Logged /> : <Login />}
 						style={{textAlign:"center"}}
 					/>
+          </div>
 			</MuiThemeProvider>
   		)
   	}
