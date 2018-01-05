@@ -4,13 +4,14 @@ import AutoCompleteTemplete from './AutoCompleteTemplete';
 import Avatar from './Avatar';
 import BadgeTemplete from './BadgeTemplete';
 import BottomNavigationTemplete from './BottomNavigationTemplete';
+import FlatButtonTemplete from './FlatButtonTemplete';
 
 class App extends React.Component {
     render(){
 
         return (
                 <div>
-					<BottomNavigationTemplete/>
+                    <FlatButtonTemplete/>
                 </div>
         );
     }
@@ -23,4 +24,5 @@ export default App;
                 	<AutoCompleteTemplete/>
                 	<Avatar/>
                 	<BadgeTemplete/>
+                    <BottomNavigationTemplete/>
 */
