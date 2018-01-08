@@ -34,75 +34,78 @@ export default class ChipExampleSimple extends React.Component {
 
   render() {
     return (
-      <MuiThemeProvider>
-      <div style={styles.wrapper}>
+      <div>
+        7. Chip
+        <MuiThemeProvider>
+        <div style={styles.wrapper}>
 
-        <Chip
-          style={styles.chip}
-        >
-          Text Chip
-        </Chip>
+          <Chip
+            style={styles.chip}
+          >
+            Text Chip
+          </Chip>
 
-        <Chip
-          onRequestDelete={handleRequestDelete}
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          Deletable Text Chip
-        </Chip>
+          <Chip
+            onRequestDelete={handleRequestDelete}
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            Deletable Text Chip
+          </Chip>
 
-        <Chip
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          <Avatar src="http://enadcity.org/enadcity/wp-content/uploads/2017/02/profile-pictures.png" />
-          Image Avatar Chip
-        </Chip>
+          <Chip
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            <Avatar src="http://enadcity.org/enadcity/wp-content/uploads/2017/02/profile-pictures.png" />
+            Image Avatar Chip
+          </Chip>
 
-        <Chip
-          onRequestDelete={handleRequestDelete}
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          <Avatar src="http://enadcity.org/enadcity/wp-content/uploads/2017/02/profile-pictures.png" />
-          Deletable Avatar Chip
-        </Chip>
+          <Chip
+            onRequestDelete={handleRequestDelete}
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            <Avatar src="http://enadcity.org/enadcity/wp-content/uploads/2017/02/profile-pictures.png" />
+            Deletable Avatar Chip
+          </Chip>
 
-        <Chip
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          <Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />
-          FontIcon Avatar Chip
-        </Chip>
+          <Chip
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            <Avatar icon={<FontIcon className="material-icons">perm_identity</FontIcon>} />
+            FontIcon Avatar Chip
+          </Chip>
 
-        <Chip
-          onRequestDelete={handleRequestDelete}
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          <Avatar color="#444" icon={<SvgIconFace />} />
-          SvgIcon Avatar Chip
-        </Chip>
+          <Chip
+            onRequestDelete={handleRequestDelete}
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            <Avatar color="#444" icon={<SvgIconFace />} />
+            SvgIcon Avatar Chip
+          </Chip>
 
-        <Chip onClick={handleClick} style={styles.chip}>
-          <Avatar size={32}>A</Avatar>
-          Text Avatar Chip
-        </Chip>
+          <Chip onClick={handleClick} style={styles.chip}>
+            <Avatar size={32}>A</Avatar>
+            Text Avatar Chip
+          </Chip>
 
-        <Chip
-          backgroundColor={blue300}
-          onRequestDelete={handleRequestDelete}
-          onClick={handleClick}
-          style={styles.chip}
-        >
-          <Avatar size={32} color={blue300} backgroundColor={indigo900}>
-            MB
-          </Avatar>
-          Colored Chip
-        </Chip>
+          <Chip
+            backgroundColor={blue300}
+            onRequestDelete={handleRequestDelete}
+            onClick={handleClick}
+            style={styles.chip}
+          >
+            <Avatar size={32} color={blue300} backgroundColor={indigo900}>
+              MB
+            </Avatar>
+            Colored Chip
+          </Chip>
+        </div>
+        </MuiThemeProvider>
       </div>
-      </MuiThemeProvider>
     );
   }
 }

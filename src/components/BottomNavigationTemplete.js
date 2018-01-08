@@ -27,28 +27,30 @@ class BottomNavigationExampleSimple extends Component {
 
   render() {
     return (
-
-      <MuiThemeProvider>
-        <Paper zDepth={1}>
-          <BottomNavigation selectedIndex={this.state.selectedIndex}>
-            <BottomNavigationItem
-              label="Recents"
-              icon={<FontIcon className="material-icons">restore</FontIcon>}
-              onClick={() => this.select(0)}
-            />
-            <BottomNavigationItem
-              label="Favorites"
-              icon={favoritesIcon}
-              onClick={() => this.select(1)}
-            />
-            <BottomNavigationItem
-              label="Nearby"
-              icon={nearbyIcon}
-              onClick={() => this.select(2)}
-            />
-          </BottomNavigation>
-        </Paper>
-      </MuiThemeProvider>
+      <div>
+      5. BottomNavigation
+        <MuiThemeProvider>
+          <Paper zDepth={1}>
+            <BottomNavigation selectedIndex={this.state.selectedIndex}>
+              <BottomNavigationItem
+                label="Recents"
+                icon={<FontIcon className="material-icons">restore</FontIcon>}
+                onClick={() => this.select(0)}
+              />
+              <BottomNavigationItem
+                label="Favorites"
+                icon={favoritesIcon}
+                onClick={() => this.select(1)}
+              />
+              <BottomNavigationItem
+                label="Nearby"
+                icon={nearbyIcon}
+                onClick={() => this.select(2)}
+              />
+            </BottomNavigation>
+          </Paper>
+        </MuiThemeProvider>
+      </div>
     );
   }
 }

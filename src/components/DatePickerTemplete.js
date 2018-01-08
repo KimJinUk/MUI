@@ -8,14 +8,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
  * To display the year selection first, set the `openToYearSelection` property to `true`.
  */
 const DatePickerExampleSimple = () => (
-  <MuiThemeProvider>
-	  <div>
-	    <DatePicker hintText="Portrait Dialog" />
-	    <DatePicker hintText="Landscape Dialog" mode='landscape' onDismiss={() => {console.log('a')}} />
-	    <DatePicker hintText="Dialog Disabled" disabled={true} />
-	    <DatePicker hintText="Open to Year" openToYearSelection={true} />
-	  </div>
-  </MuiThemeProvider>
+	<div>
+		8. DatePicker
+		<MuiThemeProvider>
+			<div>
+				<DatePicker hintText="Portrait Dialog" />
+				<DatePicker hintText="Landscape Dialog" mode='landscape' onDismiss={() => {console.log('a')}} />
+				<DatePicker hintText="Dialog Disabled" disabled={true} />
+				<DatePicker hintText="Open to Year" openToYearSelection={true} />
+			</div>
+		</MuiThemeProvider>
+	</div>
 );
 
 export default DatePickerExampleSimple;
