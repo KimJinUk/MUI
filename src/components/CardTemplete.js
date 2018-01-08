@@ -16,8 +16,6 @@ class CardExampleWithAvatar extends React.Component {
       <MuiThemeProvider>
         <Card>
           <CardHeader
-            title={this.props.user[0].userName}
-            subtitle={this.props.user[0].userDescription}
             avatar="http://enadcity.org/enadcity/wp-content/uploads/2017/02/profile-pictures.png"
             actAsExpander={true}
             showExpandableButton={true}
@@ -38,7 +36,7 @@ class CardExampleWithAvatar extends React.Component {
 
           <CardActions>
             <FlatButton label="Buy" />
-            <FlatButton label="isBuy" onClick = {this.props.user[0].idBuy?()=>{alert('1')}:()=>{alert('3')}} />
+            <FlatButton label="isBuy"/>
           </CardActions>
         </Card>
       </MuiThemeProvider>
