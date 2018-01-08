@@ -28,6 +28,7 @@ class FlatButtonExampleSimple extends React.Component {
 		return (
 				<MuiThemeProvider>
 				  <div>
+				  	6. Button - Icon Button<br/>
 				    <IconButton tooltip="bottom-right" touch={true} tooltipPosition="bottom-right">
 				      <ActionGrade />
 				    </IconButton>
