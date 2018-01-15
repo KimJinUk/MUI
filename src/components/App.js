@@ -20,6 +20,12 @@ import SelectFieldTemplete from './SelectFieldTemplete';
 import SliderTemplete from './SliderTemplete';
 import SwitchesTemplete from './SwitchesTemplete';
 import SnackBarTemplete from './SnackBarTemplete';
+import StepperTemplete from './StepperTemplete';
+import SubheaderTemplete from './SubheaderTemplete';
+import TableTemplete from './TableTemplete';
+import TabsTemplete from './TabsTemplete';
+import TextFieldTemplete from './TextFieldTemplete';
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -32,7 +38,7 @@ class App extends React.Component {
     render(){
     	
         return (
-            <SnackBarTemplete/>
+            <TextFieldTemplete/>
         );
     }
 }
@@ -59,4 +65,9 @@ export default App;
             <SelectFieldTemplete/>
             <SliderTemplete/>
             <SwitchesTemplete/>
+            <SnackBarTemplete/>
+            <StepperTemplete/>
+            <SubheaderTemplete/>
+            <TableTemplete/>
+            <TabsTemplete/>
 */
