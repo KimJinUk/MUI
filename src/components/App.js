@@ -25,6 +25,8 @@ import SubheaderTemplete from './SubheaderTemplete';
 import TableTemplete from './TableTemplete';
 import TabsTemplete from './TabsTemplete';
 import TextFieldTemplete from './TextFieldTemplete';
+import TimePickerTemplete from './TimePickerTemplete';
+import ToolbarTemplete from './ToolbarTemplete';
 
 
 class App extends React.Component {
@@ -38,7 +40,7 @@ class App extends React.Component {
     render(){
     	
         return (
-            <TextFieldTemplete/>
+            <ToolbarTemplete/>
         );
     }
 }
@@ -70,4 +72,5 @@ export default App;
             <SubheaderTemplete/>
             <TableTemplete/>
             <TabsTemplete/>
+            <TextFieldTemplete/>
 */
